@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👮 - ระบบเจ้าหน้าที่</title>
+    <link rel="stylesheet" href="css/loginofficer.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+        <form action="Backend/Loginstaff/login.php" method="POST">
+            <h1>เข้าสู่ระบบ</h1>
+            <h2>ระบบเจ้าหน้าที่</h2>
+
+            <div class="form-group">
+                <label for="username">ชื่อผู้ใช้ หรือ อีเมล</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="forgot-password">
+                <a href="เมลรีเซ็นรหัสผ่าน.html">ลืมรหัสผ่าน?</a>
+            </div>
+
+            <button type="submit" class="btn-primary">เข้าสู่ระบบ</button>
+
+            <div class="auth-link">
+                <span>ยังไม่มีบัญชี?</span>
+                <a href="register-officer.html">สมัครสมาชิก</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

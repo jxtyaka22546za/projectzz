@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แลกของรางวัล</title>
+    <link rel="stylesheet" href="css/Reward.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="redeem-container">
+        <header class="redeem-header">
+            <div class="header-title">
+                <img src="img/Badge.png" alt="Reward Icon" class="header-icon">
+                <h1>แลกของรางวัล</h1>
+            </div>
+            <div class="user-points points-display">
+                กำลังโหลดแต้ม...
+            </div>
+        </header>
+
+        <hr class="divider">
+
+        <div class="filter-section">
+            <input type="text" placeholder="ค้นหารางวัล" class="search-bar">
+            <div class="filter-buttons">
+                <button class="filter-btn">มาใหม่</button>
+                <button class="filter-btn">ช่วงเต็ม</button>
+            </div>
+        </div>
+
+        <main class="rewards-grid">
+            <div class="reward-card">
+                <div class="reward-image color-1">Reward</div>
+                <div class="reward-info">
+                    <h2>รางวัลที่ 1</h2>
+                    <p class="points">10 แต้ม</p>
+                    <button class="redeem-btn" onclick="redeem(1, 10)">แลกของรางวัล</button>
+                </div>
+            </div>
+
+            <div class="reward-card">
+                <div class="reward-image color-2">Reward</div>
+                <div class="reward-info">
+                    <h2>รางวัลที่ 2</h2>
+                    <p class="points">350 แต้ม</p>
+                    <button class="redeem-btn" onclick="redeem(2, 350)">แลกของรางวัล</button>
+                </div>
+            </div>
+
+            <div class="reward-card">
+                <div class="reward-image color-3">Reward</div>
+                <div class="reward-info">
+                    <h2>รางวัลที่ 3</h2>
+                    <p class="points">400 แต้ม</p>
+                    <button class="redeem-btn" onclick="redeem(3, 400)">แลกของรางวัล</button>
+                </div>
+            </div>
+
+            <div class="reward-card">
+                <div class="reward-image color-4">Reward</div>
+                <div class="reward-info">
+                    <h2>รางวัลที่ 4</h2>
+                    <p class="points">620 แต้ม</p>
+                    <button class="redeem-btn" onclick="redeem(4, 620)">แลกของรางวัล</button>
+                </div>
+            </div>
+        </main>
+        
+        <script src="javascript/Raward/Raward.js"></script>
+    </div>
+
+</body>
+</html>

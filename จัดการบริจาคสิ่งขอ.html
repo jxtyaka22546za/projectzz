@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จัดการสิ่งของบริจาค - ระบบเจ้าหน้าที่</title>
+    <link rel="stylesheet" href="css/จัดการบริจาคสิ่งขอ.css">
+</head>
+
+<body>
+    <button class="hamburger-toggle" onclick="toggleSidebar()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    <div class="app-container">
+        <nav class="sidebar">
+            <h2>ระบบเจ้าหน้าที่</h2>
+
+            <ul class="nav-menu">
+                <li><a href="officer.html"><span class="icon">🏠</span>แดชบอร์ด</a></li>
+                <li><a href="จัดการขยะ.html"><span class="icon">🗑️</span>จัดการขยะ</a></li>
+                <li><a href="จัดการบริจาคสิ่งขอ.html"><span class="icon">🎁</span>จัดการสิ่งของบริจาค</a></li>
+                <li><a href="จัดการข้อร้องเรียน.html"><span class="icon">📄</span>จัดการข้อร้องเรียน</a></li>
+                <li><a href="จัดการสมาชิก.html"><span class="icon">👥</span>จัดการสมาชิก</a></li>
+            </ul>
+
+            <hr>
+            <a href="#" id="logoutBtn" class="logout-btn">ออกจากระบบ</a>
+        </nav>
+
+        <main class="main-content">
+            <h1>จัดการสิ่งของบริจาค</h1>
+            <h2>รายการบริจาคสิ่งของใหม่</h2>
+
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>สิ่งของ</th>
+                            <th>ชื่อผู้บริจาค</th>
+                            <th>วันที่แจ้ง</th>
+                            <th>สถานะ</th>
+                            <th>ดำเนินการ</th>
+                        </tr>
+                    </thead>
+                    <tbody id="donationTableBody">
+                        <tr>
+                            <td colspan="6" class="text-center">กำลังโหลดข้อมูล...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </table>
+    </div>
+
+    </main>
+    </div>
+    <script src="javascript/donation_post/admin_donations.js    "></script>
+</body>
+
+</html>

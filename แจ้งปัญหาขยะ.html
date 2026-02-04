@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แจ้งปัญหาขยะ</title>
+    <link rel="stylesheet" href="css/แจ้งปัญหาขยะ.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="nav-links">
+            <a href="index.html">หน้าแรก</a>
+            <a href="แจ้งปัญหาขยะ.html">แจ้งปัญหาขยะ</a>
+            <a href="บริจาคสิ่งของ.html">บริจาคสิ่งของ</a>
+            <a href="แผนที่จุดทิ้งขยะ.html">แผนที่จุดทิ้งขยะ</a>
+            <a href="แจ้งข้อร้องเรียน.html">แจ้งข้อร้องเรียน</a>
+            <a href="#" id="logoutBtn" class="logout-link" style="color: #ff4d4d;">ออกจากระบบ</a>
+        </div>
+    </nav>
+
+    <main class="form-container">
+        <div class="form-title">แจ้งปัญหาขยะ</div>
+
+        <form id="wasteReportForm" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="issue-type">ประเภทขยะ</label>
+                <input type="text" id="issue-type" name="topic" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user-info">ชื่อ - นามสกุล</label>
+                <input type="text" id="name_or_alias" placeholder="กรอกชื่อของคุณ">
+            </div>
+
+            <div class="form-group">
+                <label for="user-info">ที่อยู่</label>
+                <input type="text" id="address" name="address" placeholder="ที่อยู่ของคุณ">
+            </div>
+
+            <div class="form-group">
+                <label for="details">รายละเอียด</label>
+                <textarea id="details" name="details" rows="7" placeholder="อธิบายรายละเอียดของปัญหา..."
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="file-upload">แนบรูปภาพ</label>
+                <input type="file" id="file-upload" name="image">
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <span><img src="img/Exclamation Mark.png" alt=""></span>
+                แจ้งปัญหา
+            </button>
+        </form>
+    </main>
+    <script src="javascript/repor/reports.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน - ระบบเจ้าหน้าที่</title>
+    <link rel="stylesheet" href="css/Registerofficer.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <form action="Backend/Loginstaff/register_staff.php" method="POST">
+            <h1>สร้างบัญชีใหม่</h1>
+            <h2>สร้างบัญชีใหม่สำหรับเจ้าหน้าที่</h2>
+
+            <div class="form-group">
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">ชื่อผู้ใช้</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+                <input type="password" id="confirm-password" name="confirm_password" required>
+            </div>
+
+            <button type="submit" name="register" class="btn-primary">ลงทะเบียน</button>
+
+            <div class="auth-link">
+                <p>มีบัญชีอยู่แล้ว? <a href="login-officer.html">เข้าสู่ระบบ</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บริจาคสิ่งของ</title>
+    <link rel="stylesheet" href="css/บริจาคสิ่งของ.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="nav-links">
+            <a href="index.html">หน้าแรก</a>
+            <a href="แจ้งปัญหาขยะ.html">แจ้งปัญหาขยะ</a>
+            <a href="บริจาคสิ่งของ.html">บริจาคสิ่งของ</a>
+            <a href="แผนที่จุดทิ้งขยะ.html">แผนที่จุดทิ้งขยะ</a>
+            <a href="แจ้งข้อร้องเรียน.html">แจ้งข้อร้องเรียน</a>
+            <a href="#" id="logoutBtn" class="logout-link" style="color: #ff4d4d;">ออกจากระบบ</a>
+        </div>
+    </nav>
+
+    <main class="form-container">
+        <div class="form-title">บริจาคสิ่งของ</div>
+
+        <form id="donationForm" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="item-type">ประเภทสิ่งของ</label>
+                <input type="text" id="item-type" name="item_type" placeholder="ประเภทสิ่งของ" required>
+            </div>
+
+            <div class="form-group">
+                <label for="donor-name">ชื่อของคุณ (ถ้ามี)</label>
+                <input type="text" id="donor-name" name="donor_name" placeholder="ชื่อของคุณ (ถ้ามี)">
+            </div>
+
+            <div class="form-group">
+                <label for="details">รายละเอียด</label>
+                <textarea id="details" name="details" rows="7" placeholder="อธิบายรายละเอียด..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="file-upload">แนบรูปภาพ</label>
+                <input type="file" id="file-upload" name="image">
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <span>🎁</span>
+                บริจาค
+            </button>
+        </form>
+    </main>
+    <script src="javascript/donation_post/donation_post.js"></script>
+</body>
+
+</html>

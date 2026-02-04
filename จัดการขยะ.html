@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จัดการขยะ - ระบบเจ้าหน้าที่</title>
+    <link rel="stylesheet" href="css/จัดการขยะ.css">
+</head>
+
+<body>
+    <button class="hamburger-toggle" onclick="toggleSidebar()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    <div class="app-container">
+        <nav class="sidebar">
+            <h2>ระบบเจ้าหน้าที่</h2>
+            <ul class="nav-menu">
+                <li><a href="officer.html"><span class="icon">🏠</span>แดชบอร์ด</a></li>
+                <li><a href="จัดการขยะ.html"><span class="icon">🗑️</span>จัดการขยะ</a></li>
+                <li><a href="จัดการบริจาคสิ่งขอ.html"><span class="icon">🎁</span>จัดการสิ่งของบริจาค</a></li>
+                <li><a href="จัดการข้อร้องเรียน.html"><span class="icon">📄</span>จัดการข้อร้องเรียน</a></li>
+                <li><a href="จัดการสมาชิก.html"><span class="icon">👥</span>จัดการสมาชิก</a></li>
+            </ul>
+            
+            <hr>
+            <a href="#" id="logoutBtn" class="logout-btn">ออกจากระบบ</a>
+        </nav>
+
+        <main class="main-content">
+            <h1>จัดการขยะ</h1>
+            <h2>รายการแจ้งเก็บขยะประจำวัน</h2>
+
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>ประเภทขยะ</th>
+                            <th>ผู้แจ้ง</th>
+                            <th>ที่อยู่</th>
+                            <th>รายละเอียด</th>
+                            <th>สถานะ</th>
+                            <th>วันที่แจ้ง</th>
+                            <th>ดำเนินการ</th>
+                        </tr>
+                        </tr>
+                    </thead>
+
+                    <tbody id="reportTableBody">
+                        <tr>
+                        <tr>
+                            <td colspan="7" class="text-center">กำลังโหลดข้อมูล...</td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="javascript/จัดการขยะ/จัดการขยะ.js"></script>
+</body>
+
+</html>

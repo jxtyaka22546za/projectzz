@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบเจ้าหน้าที่</title>
+    <link rel="stylesheet" href="css/officer.css">
+
+</head>
+
+<body>
+    <button class="hamburger-toggle" onclick="toggleSidebar()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+
+    <div class="app-container">
+        <nav class="sidebar">
+            <h2>ระบบเจ้าหน้าที่</h2>
+
+            <ul class="nav-menu">
+                <li><a href="officer.html"><span class="icon">🏠</span>แดชบอร์ด</a></li>
+                <li><a href="จัดการขยะ.html"><span class="icon">🗑️</span>จัดการขยะ</a></li>
+                <li><a href="จัดการบริจาคสิ่งขอ.html"><span class="icon">🎁</span>จัดการสิ่งของบริจาค</a></li>
+                <li><a href="จัดการข้อร้องเรียน.html"><span class="icon">📄</span>จัดการข้อร้องเรียน</a></li>
+                <li><a href="จัดการสมาชิก.html"><span class="icon">👥</span>จัดการสมาชิก</a></li>
+            </ul>
+
+            <hr>
+            <a href="#" id="logoutBtn" class="logout-btn">ออกจากระบบ</a>
+        </nav>
+
+        <main class="main-content">
+            <h1>แดชบอร์ด</h1>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-text">
+                        <h3>ขยะที่เก็บวันนี้</h3>
+                        <p class="stat"><span id="reports-num">0</span> รายการ</p>
+                    </div>
+                    <div class="card-icon icon-waste">🗑️</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-text">
+                        <h3>สิ่งของบริจาคใหม่</h3>
+                        <p class="stat"><span id="donations-num">0</span> รายการ</p>
+                    </div>
+                    <div class="new-badge">NEW</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-text">
+                        <h3>จัดการข้อร้องเรียน</h3>
+                        <p class="stat"><span id="complaints-num">0</span> เรื่องค้าง</p>
+                    </div>
+                    <div class="card-icon icon-issue">🗂️</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-text">
+                        <h3>สมาชิกทั้งหมด</h3>
+                        <p class="stat"><span id="users-num">0</span> คน</p>
+                    </div>
+                    <div class="card-icon icon-member">👤</div>
+                </div>
+            </div>
+
+            <script src="javascript/Dashboardadmin/Dashboard.js"></script>
+</body>
+
+</html>

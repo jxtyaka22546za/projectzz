@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จัดการสมาชิก - ระบบเจ้าหน้าที่</title>
+    <link rel="stylesheet" href="css/จัดการสมาชิก.css">
+</head>
+<body>
+    <button class="hamburger-toggle" onclick="toggleSidebar()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    <div class="app-container">
+        <nav class="sidebar">
+            <h2>ระบบเจ้าหน้าที่</h2>
+            <ul class="nav-menu">
+                <li><a href="officer.html"><span class="icon">🏠</span>แดชบอร์ด</a></li>
+                <li><a href="จัดการขยะ.html"><span class="icon">🗑️</span>จัดการขยะ</a></li>
+                <li><a href="จัดการบริจาคสิ่งขอ.html"><span class="icon">🎁</span>จัดการสิ่งของบริจาค</a></li>
+                <li><a href="จัดการข้อร้องเรียน.html"><span class="icon">📄</span>จัดการข้อร้องเรียน</a></li>
+                <li><a href="จัดการสมาชิก.html" class="active"><span class="icon">👥</span>จัดการสมาชิก</a></li>
+            </ul>
+            <hr>
+            <a href="#" id="logoutBtn" class="logout-btn">ออกจากระบบ</a>
+        </nav>
+
+        <main class="main-content">
+            <h1>จัดการสมาชิก</h1>
+            <div class="list-container">
+                <h2>รายชื่อเจ้าหน้าที่ดูแลระบบ</h2>
+                <ul id="member-list-wrapper">
+                    <li class="member-item">กำลังโหลดข้อมูล...</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="javascript/จัดการสมาชิก/admin_members.js"></script>
+</body>
+</html>

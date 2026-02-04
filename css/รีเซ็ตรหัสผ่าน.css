@@ -1,0 +1,89 @@
+:root{
+  --bg: #f3f6fb;
+  --card: #ffffff;
+  --accent: #4f46e5;
+  --accent-2: #6366f1;
+  --muted: #6b7280;
+  --danger: #ef4444;
+  --radius: 12px;
+  font-family: 'Kanit', system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans Thai', sans-serif;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background: linear-gradient(180deg, var(--bg), #eef2ff);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  color:#111827;
+}
+
+.card{
+  width:100%;
+  max-width:420px;
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:28px;
+  box-shadow:0 8px 30px rgba(15,23,42,0.08);
+  border:1px solid rgba(99,102,241,0.08);
+}
+
+h1{font-size:20px;margin:0 0 6px}
+p.lead{margin:0 0 18px;color:var(--muted);font-size:14px}
+
+label{display:block;font-size:13px;margin-bottom:6px;color:#111827}
+.field{margin-bottom:14px}
+input[type="email"], input[type="password"], input[type="text"]{
+  width:100%;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #e6e9ef;
+  background:#fff;
+  font-size:14px;
+  outline:none;
+  transition:box-shadow .15s, border-color .15s;
+}
+
+input:focus{
+  box-shadow:0 4px 10px rgba(99,102,241,0.08);
+  border-color:var(--accent-2);
+}
+
+.actions{display:flex;gap:8px;align-items:center}
+button.submit{
+  appearance:none;
+  border:0;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  color:white;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  flex:1;
+}
+
+a.submit {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+a.submit:hover {
+  opacity: 0.85;
+}
+
+button.submit[disabled]{opacity:0.6;cursor:not-allowed}
+
+.helper{font-size:13px;color:var(--muted);text-align:center;margin-top:12px}
+.error{color:var(--danger);font-size:13px;margin-top:6px}
+@media (max-width:420px){.card{padding:20px}}

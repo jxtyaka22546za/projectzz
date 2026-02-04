@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แผนที่จุดทิ้งขยะ</title>
+    <link rel="stylesheet" href="css/แผนที่จุดทิ้งขยะ.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="nav-links">
+            <a href="index.html">หน้าแรก</a>
+            <a href="แจ้งปัญหาขยะ.html">แจ้งปัญหาขยะ</a>
+            <a href="บริจาคสิ่งของ.html">บริจาคสิ่งของ</a>
+            <a href="แผนที่จุดทิ้งขยะ.html">แผนที่จุดทิ้งขยะ</a>
+            <a href="แจ้งข้อร้องเรียน.html">แจ้งข้อร้องเรียน</a>
+            <a href="#" id="logoutBtn" class="logout-link" style="color: #ff4d4d;">ออกจากระบบ</a>
+        </div>
+    </nav>
+
+    <main class="map-container">
+
+        <h1 class="form-title">แผนที่จุดทิ้งขยะ</h1>
+
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-bar" placeholder="ค้นหาพิกัด">
+        </div>
+
+        <div class="map-area">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6513.268545526047!2d100.47660135924531!3d13.910144025282797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e285035816a371%3A0xe6836fb1acf43de7!2z4LmA4LiB4Liy4Liw4LmA4LiB4Lij4LmH4LiU!5e0!3m2!1sth!2sth!4v1760944302559!5m2!1sth!2sth"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+            </iframe>
+        </div>
+
+        <div class="location-info">
+            <h2>จุดทิ้งขยะในชุมชน</h2>
+            <a href="#" class="location-btn">ทิ้งขยะทั่วไป - หน้าปากซอยข้างทาง</a>
+        </div>
+
+    </main>
+    <script src="javascript/map/map.js"></script>
+</body>
+
+</html>

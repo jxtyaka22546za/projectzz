@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard สะสมแต้ม</title>
+    <link rel="stylesheet" href="css/Dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h1 class="main-title">Dashboard สะสมแต้ม</h1>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="icon">⭐</div>
+                <h3>คะแนนสะสมของคุณ</h3>
+                <p id="my-points" class="points"></p>
+                <p class="detail">แจ้งปัญหาขยะ: +10 แต้ม<br>บริจาคสิ่งของ: +20 แต้ม</p>
+            </div>
+            <div class="stat-card">
+                <div class="icon">🛡️</div>
+                <h3>ระดับของคุณ</h3>
+                <p id="level-text" class="level-text">ผู้พิทักษ์ชุมชน</p>
+                <p class="detail">ระดับถัดไป : นักรบขยะ</p>
+            </div>
+        </div>
+
+        <div class="leaderboard">
+            <h2 class="leaderboard-header">ผู้สะสมแต้มชุมชนดีเด่นประจำเดือน 🏆</h2>
+
+            <div class="top-three">
+                <div class="ranker rank-2">
+                    <img src="img/Profile.png">
+                    <div id="rank2-name" class="name">---</div>
+                    <div id="rank2-points" class="points">0 แต้ม</div>
+                    <div class="rank">อันดับ 2</div>
+                </div>
+
+                <div class="ranker rank-1">
+                    <img src="img/Profile.png">
+                    <div id="rank1-name" class="name">---</div>
+                    <div id="rank1-points" class="points">0 แต้ม</div>
+                    <div class="rank">อันดับ 1</div>
+                </div>
+
+                <div class="ranker rank-3">
+                    <img src="img/Profile.png">
+                    <div id="rank3-name" class="name">---</div>
+                    <div id="rank3-points" class="points">0 แต้ม</div>
+                    <div class="rank">อันดับ 3</div>
+                </div>
+            </div>
+
+            <ul id="rankings-list-container" class="rankings-list">
+                </ul>
+        </div>
+    </div>
+
+    <script src="javascript/Dashboardpoints/point.js"></script>
+</body>
+</html>

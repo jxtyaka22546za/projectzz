@@ -1,0 +1,215 @@
+:root {
+    --bg-color: #e6f7f4;
+    --card-bg: #ffffff;
+    --primary-text: #333;
+    --secondary-text: #777;
+    --accent-color: #1a1818;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --border-radius: 15px;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.main-title {
+    background-color: #ffffff;
+    color: var(--accent-color);
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-card .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+    color: var(--secondary-text);
+}
+
+.stat-card .points {
+    font-size: 2.2em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.stat-card .detail {
+    font-size: 0.8em;
+    color: var(--secondary-text);
+    margin-top: 10px;
+}
+
+.level-text {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.leaderboard {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 25px;
+}
+
+.leaderboard-header {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.top-three {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.ranker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ranker img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    object-fit: cover;
+}
+
+.ranker .name {
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.ranker .points {
+    font-size: 0.9em;
+    color: var(--secondary-text);
+}
+
+.ranker .rank {
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.rank-1 {
+    order: 10;
+}
+
+.rank-1 img {
+    width: 75px;
+    height: 75px;
+    gap: 40px;
+    border-color: #ffc107;
+}
+
+.rank-1 .rank {
+    color: #ffc107;
+}
+
+.rank-2 {
+    order: 10;
+}
+
+.rank-2 img {
+    gap: 40px;
+    border-color: #c0c0c0;
+}
+
+.rank-2 .rank {
+    color: #a0a0a0;
+}
+
+.rank-3 {
+    order: 10;
+}
+
+.rank-3 img {
+    gap: 40px;
+    border-color: #cd7f32;
+}
+
+.rank-3 .rank {
+    color: #cd7f32;
+}
+
+.rankings-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.list-item:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.list-item .rank-number {
+    font-weight: 600;
+    color: var(--secondary-text);
+    width: 40px;
+}
+
+.list-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.list-item .name {
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+.list-item .points {
+    font-weight: 500;
+    color: var(--secondary-text);
+}

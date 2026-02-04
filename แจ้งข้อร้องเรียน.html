@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แจ้งข้อร้องเรียน</title>
+    <link rel="stylesheet" href="css/แจ้งข้อร้องเรียน.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="nav-links">
+            <a href="index.html">หน้าแรก</a>
+            <a href="แจ้งปัญหาขยะ.html">แจ้งปัญหาขยะ</a>
+            <a href="บริจาคสิ่งของ.html">บริจาคสิ่งของ</a>
+            <a href="แผนที่จุดทิ้งขยะ.html">แผนที่จุดทิ้งขยะ</a>
+            <a href="แจ้งข้อร้องเรียน.html">แจ้งข้อร้องเรียน</a>
+            <a href="#" id="logoutBtn" class="logout-link" style="color: #ff4d4d;">ออกจากระบบ</a>
+        </div>
+    </nav>
+
+    <main class="form-container">
+        <div class="form-title">แจ้งข้อร้องเรียน</div>
+
+        <form action="Backend/insert_complaint/submit_complaint.php" method="POST" enctype="multipart/form-data">
+
+            <input type="hidden" name="report_type" value="complaint">
+
+            <div class="form-group">
+                <label for="name_or_alias">ชื่อผู้แจ้ง</label>
+                <input type="text" id="name_or_alias" name="name_or_alias" placeholder="กรอกชื่อ-นามสกุล">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">หัวข้อ</label>
+                <input type="text" id="subject" name="subject" placeholder="กรอกหัวข้อเรื่องร้องเรียน" required>
+            </div>
+
+            <div class="form-group">
+                <label for="detail">รายละเอียด</label>
+                <textarea id="detail" name="details" rows="7" placeholder="อธิบายปัญหาที่ต้องการร้องเรียน..."
+                    required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+                <span>⚠️</span> แจ้งข้อร้องเรียน
+            </button>
+        </form>
+    </main>
+    <script src="javascript/reportcomplaint/get_admin.js"></script>
+</body>
